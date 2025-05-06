@@ -1,0 +1,49 @@
+@use "./variables" as variable;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: variable.$color-black;
+  color: variable.$color-text;
+  -webkit-font-smoothing: antialiased;
+  font-family: "DM Sans", system-ui;
+  box-sizing: border-box;
+  font-weight: 300;
+  overflow: hidden;
+}
+
+/*1 rem = 16px*/
+html {
+  font-size: 16px;
+}
+
+body,
+html {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}

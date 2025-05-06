@@ -1,0 +1,21 @@
+@use "src/styles/variables" as variable;
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.controlBoard {
+  display: flex;
+  //align-items: center;
+  justify-content: center;
+  background: variable.$gradient-bg;
+  width: 70vw;
+  height: 55vh;
+  padding: 2rem;
+  border: 2px solid variable.$color-stroke;
+  border-radius: 25px;
+}

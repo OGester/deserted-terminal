@@ -1,0 +1,61 @@
+// colors
+$primaryBg: #1b1b1b;
+
+$gradient-bg: var(
+  --gradient_default,
+  linear-gradient(180deg, #232325 17.5%, #151515 100%)
+);
+
+$gradient-horizontal: var(
+  --gradient_horizontal,
+  linear-gradient(
+    90deg,
+    #232325 7%,
+    #45454b 25.5%,
+    #9c9c9c 50%,
+    #45454b 78%,
+    #232325 92.5%
+  )
+);
+$gradient-tennis: var(
+  --gradient_horizontal,
+  linear-gradient(90deg, #232325 7%, #e1ff17 50%, #232325 92.5%)
+);
+
+$color-gray-dark: #232325; // almost black
+$color-gray-medium: #45454b; // mid-tone gray
+$color-gray-light: #9c9c9c; // light gray
+
+$color-text: #e7e7e7;
+$color-text-gray: #c0c3c4;
+$color-black: #000;
+$color-white: #fff;
+
+$color-stroke: #525257;
+
+$color-tennis: #d6ff4d;
+$color-fire: #ff6c17;
+$color-purple: #dabef4;
+$color-terminal-text: #f3b10a;
+$color-terminal-glow: #eea300;
+
+// border-radius
+$radius-large: 25px;
+$radius-small: 10px;
+
+// padding
+$padding-base: 2rem;
+$padding-retina: 1rem;
+
+// font sizes
+$font-2xs: 0.625rem; // 10px
+$font-xs: 0.75rem; // 12px
+$font-sm: 0.875rem; // 14px
+$font-base: 1rem; // 16px
+$font-md: 1.125rem; // 18px
+$font-lg: 1.5rem; // 24px
+$font-xl: 1.75rem; // 28px
+$font-xxl: 2rem; // 32px
+
+// letter spacing
+$spacing: 1px;
