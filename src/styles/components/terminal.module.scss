@@ -1,6 +1,4 @@
-@use "../variables" as variable;
-$rules-w: 1.2em;
-$rules-h: 1.27em;
+@use "src/styles/variables" as variable;
 
 .terminal {
   min-height: 200px;

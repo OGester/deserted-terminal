@@ -10,12 +10,20 @@
 
 .controlBoard {
   display: flex;
-  //align-items: center;
+  align-items: center;
   justify-content: center;
   background: variable.$gradient-bg;
   width: 70vw;
   height: 55vh;
-  padding: 2rem;
+  padding: 3rem;
   border: 2px solid variable.$color-stroke;
   border-radius: 25px;
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  display: block;
+  overflow: visible; // Important for glow
 }
