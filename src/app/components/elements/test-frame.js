@@ -16,8 +16,9 @@ export default function TerminalSvg({
     >
       <defs>
         <linearGradient id="frameGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="#00ffff" />
-          <stop offset="100%" stopColor="#ff00ff" />
+          <stop offset="0%" stopColor=" #41384A" />
+          {/* #00ffff*/}
+          <stop offset="100%" stopColor=" #8A8994" /> {/*  #ff00ff*/}
         </linearGradient>
 
         <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
@@ -33,7 +34,7 @@ export default function TerminalSvg({
           <feGaussianBlur in="dilated" stdDeviation="6" result="blurred" />
 
           {/* <!-- Color it --> */}
-          <feFlood flood-color="cyan" result="glowColor" />
+          <feFlood flood-color="#654D7A" result="glowColor" />
           <feComposite
             in="glowColor"
             in2="blurred"
@@ -47,17 +48,6 @@ export default function TerminalSvg({
             <feMergeNode in="SourceGraphic" />
           </feMerge>
         </filter>
-
-        {/*   <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-          <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
-          <feFlood floodColor="cyan" result="color" />
-          <feComposite in="color" in2="blur" operator="in" result="glowColor" />
-
-          <feMerge>
-            <feMergeNode in="glowColor" />
-            <feMergeNode in="SourceGraphic" />
-          </feMerge>
-        </filter> */}
       </defs>
 
       {/* Glow outline only */}
@@ -70,21 +60,38 @@ export default function TerminalSvg({
       <path
         d="M638.89,123.16l-64.93-107.16-9.7-16H0v195.12l16,10.92,118.73,81,23.46,16h496.7v-153.47l-16-26.41ZM638.89,287.04H163.12L16,186.67V59.49h284.64l33.67-43.49h220.94l83.64,138.04v133Z"
         fill="none"
-        stroke="cyan"
+        stroke=" #39274A"
         strokeWidth={2}
         filter="url(#glow)"
       />
+    </svg>
+  );
+}
 
-      {/* Actual filled shape */}
+{
+  /*   <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+          <feFlood floodColor="cyan" result="color" />
+          <feComposite in="color" in2="blur" operator="in" result="glowColor" />
 
-      {/*   <path
+          <feMerge>
+            <feMergeNode in="glowColor" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter> */
+}
+
+{
+  /* Actual filled shape */
+}
+
+{
+  /*   <path
         d="M638.89,123.16l-64.93-107.16-9.7-16H0v195.12l16,10.92,118.73,81,23.46,16h496.7v-153.47l-16-26.41ZM638.89,287.04H163.12L16,186.67V59.49h284.64l33.67-43.49h220.94l83.64,138.04v133Z"
         //fill={fill}
         fill="url(#frameGradient)"
         filter="url(#glow)"
         stroke={stroke}
         strokeWidth={strokeWidth}
-      /> */}
-    </svg>
-  );
+      /> */
 }
